@@ -44,6 +44,9 @@ Non-Line-of-Sight (NLOS): A connection is obstructed by buildings or other obsta
 **Python 3.x**
 **numpy, matplotlib, ipywidgets**
 
+# License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 You can install the required dependencies using:
 pip install numpy matplotlib ipywidgets
 
