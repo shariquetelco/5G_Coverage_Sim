@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Budget Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Link Budget Calculator</h1>
+        <form method="POST" class="mt-3">
+            <div class="form-group">
+                <label for="transmitter_power">Transmitter Power (dBm):</label>
+                <input type="number" class="form-control" id="transmitter_power" name="transmitter_power" required>
+            </div>
+            <div class="form-group">
+                <label for="transmitter_gain">Transmitter Gain (dB):</label>
+                <input type="number" class="form-control" id="transmitter_gain" name="transmitter_gain" required>
+            </div>
+            <div class="form-group">
+                <label for="receiver_gain">Receiver Gain (dB):</label>
+                <input type="number" class="form-control" id="receiver_gain" name="receiver_gain" required>
+            </div>
+            <div class="form-group">
+                <label for="path_loss">Path Loss (dB):</label>
+                <input type="number" class="form-control" id="path_loss" name="path_loss" required>
+            </div>
+            <div class="form-group">
+                <label for="receiver_sensitivity">Receiver Sensitivity (dBm):</label>
+                <input type="number" class="form-control" id="receiver_sensitivity" name="receiver_sensitivity" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+
+        <div class="mt-4">
+            <h3>Result:</h3>
+            <p>{{ result }}</p>
+        </div>
+    </div>
+</body>
+</html>
